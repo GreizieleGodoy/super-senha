@@ -1,0 +1,90 @@
+# Xcode
+#
+# contribuidores gitignore: lembre-se de atualizar Global / Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+# # Configurações do usuário
+xcuserdata /
+
+# # compatibilidade com o Xcode 8 e anteriores (não é necessário ignorar o Xcode 9)
+* .xcscmblueprint
+* .xccheckout
+
+# # compatibilidade com o Xcode 3 e anteriores (não é necessário ignorar o Xcode 4)
+construir /
+DerivedData /
+* .movido de lado
+* .pbxuser
+! default.pbxuser
+* .mode1v3
+! default.mode1v3
+* .mode2v3
+! default.mode2v3
+* .perspectivev3
+! default.perspectivev3
+
+# # Obj-C / Swift específico
+* .hmap
+
+# # Pacote de aplicativos
+* .ipa
+* .dSYM.zip
+* .dSYM
+
+# # Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Gerenciador de pacotes Swift
+#
+# Adicione esta linha se quiser evitar o check-in do código-fonte das dependências do Swift Package Manager.
+# Pacotes /
+# Package.pins
+# Package.resolved
+# * .xcodeproj
+#
+# Xcode gera automaticamente este diretório com um arquivo .xcworkspacedata e xcuserdata
+# portanto, não é necessário a menos que você tenha adicionado um arquivo de configuração de pacote ao seu projeto
+# .swiftpm
+
+.build /
+
+# CocoaPods
+#
+# Recomendamos não adicionar o diretório Pods ao seu .gitignore. Contudo
+# você deve julgar por si mesmo, os prós e contras são mencionados em:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods /
+#
+# Adicione esta linha se quiser evitar o check-in do código-fonte no espaço de trabalho do Xcode
+# * .xcworkspace
+
+# Carthage
+#
+# Adicione esta linha se quiser evitar o check-in do código-fonte das dependências de Carthage.
+# Carthage / Checkouts
+
+Cartago / Construir /
+
+# Gerenciamento de dependência Accio
+Dependências /
+.accio /
+
+# fastlane
+#
+# É recomendado não armazenar as capturas de tela no repositório git.
+# Em vez disso, use o fastlane para gerar novamente as capturas de tela sempre que necessário.
+# Para obter mais informações sobre a configuração recomendada, visite:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane / report.xml
+fastlane / Preview.html
+fastlane / screenshots / ** / * .png
+fastlane / test_output
+
+# Injeção de código
+#
+# Depois de novas ferramentas de injeção de código, há uma pasta gerada / iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject /
